@@ -8,5 +8,5 @@ if ! command -v rg &> /dev/null; then
 fi
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-source ~/.zshrc
-source ~/.bashrc
+# source ~/.zshrc
+# source ~/.bashrc
