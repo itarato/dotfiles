@@ -1,11 +1,3 @@
-export ZSH="${HOME}/.oh-my-zsh"
-
-ZSH_THEME="simple"
-
-plugins=(git brew bundler chruby colored-man-pages colorize common-aliases gem github rails ruby)
-
-source $ZSH/oh-my-zsh.sh
-
 alias gs="git status"
 alias gpf='git push --force-with-lease origin +$(git_current_branch)'
 alias h="history | grep --color"
