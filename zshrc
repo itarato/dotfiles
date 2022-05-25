@@ -2,7 +2,7 @@ export ZSH="${HOME}/.oh-my-zsh"
 
 ZSH_THEME="simple"
 
-plugins=(git brew bundler chruby colored-man-pages colorize common-aliases gem github rails ruby)
+plugins=(git brew bundler colored-man-pages colorize common-aliases gem github rails ruby)
 
 source $ZSH/oh-my-zsh.sh
 
