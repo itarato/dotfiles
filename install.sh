@@ -15,3 +15,7 @@ ln -sf ~/dotfiles/screenrc ~/.screenrc
 
 cp ~/dotfiles/.gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
+
+cartridge insert itarato
+cp ~/.data/cartridges/itarato/*.rb ~/src/github.com/Shopify/shopify/config/initializers/
+cp ~/.data/cartridges/itarato/idbg_scripts ~/src/github.com/Shopify/shopify/
