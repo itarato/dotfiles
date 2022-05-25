@@ -1,0 +1,4 @@
+config/initializers/i_dbg.rb
+config/initializers/r_o_v.rb
+config/initializers/obj_diff.rb
+idbg_scripts
