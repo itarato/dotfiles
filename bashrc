@@ -5,7 +5,6 @@ alias g="grep -n --colour -r"
 alias grm="git rebase master"
 alias gri="git rebase -i master"
 alias to_j="ruby -e \"require 'json';require 'awesome_print';ap JSON.parse(STDIN.read)\""
-alias gd2="git-icdiff"
 alias gl="git pull || (echo \"\n*******************\n* DO IT AGAIN NOW *\n*******************\n\" ; git pull --prune)"
 
 function gsave() {

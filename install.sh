@@ -1,3 +1,5 @@
+#! /bin/zsh
+
 if ! command -v rg &> /dev/null; then
   sudo apt-get install -y htop mc
 fi
