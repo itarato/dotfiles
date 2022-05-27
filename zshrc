@@ -10,10 +10,12 @@ alias gs="git status"
 alias gpf='git push --force-with-lease origin +$(git_current_branch)'
 alias h="history | grep --color"
 alias g="grep -n --colour -r"
-alias grm="git rebase master"
-alias gri="git rebase -i master"
+alias grm="git rebase main"
+alias gri="git rebase -i main"
 alias to_j="ruby -e \"require 'json';require 'awesome_print';ap JSON.parse(STDIN.read)\""
 alias gl="git pull || (echo \"\n*******************\n* DO IT AGAIN NOW *\n*******************\n\" ; git pull --prune)"
+
+EDITOR=vim
 
 function gsave() {
   TAG=`echo $(git_current_branch) | md5`
