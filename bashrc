@@ -22,3 +22,6 @@ function gfeature() {
   git checkout -b $1
   git push --no-verify -u origin $1
 }
+
+export ITARATO_PROJECT_FOLDER="/home/spin/src/github.com/Shopify/shopify/"
+export ITARATO_LOG_FILE="/tmp/idbg_log.txt"

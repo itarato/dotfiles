@@ -19,3 +19,5 @@ git config --global core.excludesfile ~/.gitignore_global
 cartridge insert itarato
 cp -f ~/.data/cartridges/itarato/*.rb ~/src/github.com/Shopify/shopify/config/initializers/
 cp -rf ~/.data/cartridges/itarato/idbg_scripts ~/src/github.com/Shopify/shopify/
+
+touch /tmp/idbg_log.txt
