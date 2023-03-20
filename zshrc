@@ -31,5 +31,11 @@ function gfeature() {
   git push --no-verify -u origin $1
 }
 
+function shopkill() {
+  stop shopify
+  pkill -9 -f spring
+  systemctl restart mysql@shopify--shopify.service
+}
+
 export ITARATO_PROJECT_FOLDER="/home/spin/src/github.com/Shopify/shopify/"
 export ITARATO_LOG_FILE="/tmp/idbg_log.txt"
