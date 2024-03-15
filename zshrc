@@ -37,5 +37,28 @@ function shopkill() {
   systemctl restart mysql@shopify--shopify.service
 }
 
+function pgc() {
+  commit_count=`git rev-list --count --first-parent main..${git_current_branch}`
+  echo "Fount $commit_count commits in branch."
+
+  if [[ "$commit_count" -eq "0" ]];
+  then
+    if [ -z "$1" ];
+    then
+      echo "This is the first commit. Provide a commit message."
+      return 1
+    else
+      echo "Saving first commit."
+      git commit -vam $1
+    fi;
+  else
+    first_commit_offset=$(($commit_count - 1))
+    first_commit=`git rev-parse HEAD~${first_commit_offset}`
+
+    echo "Fixup commit for $first_commit."
+    git commit -va --fixup $first_commit
+  fi;
+}
+
 export ITARATO_PROJECT_FOLDER="/home/spin/src/github.com/Shopify/shopify/"
 export ITARATO_LOG_FILE="/tmp/idbg_log.txt"
