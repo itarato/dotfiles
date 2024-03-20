@@ -11,7 +11,7 @@ alias gpf='git push --force-with-lease origin +$(git_current_branch)'
 alias h="history | grep --color"
 alias g="grep -n --colour -r"
 alias grm="git rebase main"
-alias gri="git rebase -i main"
+alias gri="git rebase -i main --autosquash"
 alias to_j="ruby -e \"require 'json';require 'awesome_print';ap JSON.parse(STDIN.read)\""
 alias gl="git pull || (echo \"\n*******************\n* DO IT AGAIN NOW *\n*******************\n\" ; git pull --prune)"
 
