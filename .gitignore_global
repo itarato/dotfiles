@@ -1,5 +1,5 @@
-config/initializers/i_dbg.rb
-config/initializers/r_o_v.rb
-config/initializers/obj_diff.rb
-config/initializers/resource_guard.rb
-idbg_scripts
+areas/core/shopify/config/initializers/i_dbg.rb
+areas/core/shopify/config/initializers/r_o_v.rb
+areas/core/shopify/config/initializers/obj_diff.rb
+areas/core/shopify/config/initializers/resource_guard.rb
+areas/core/shopify/idbg_scripts
