@@ -39,7 +39,7 @@ function shopkill() {
 
 function pgc() {
   commit_count=`git rev-list --count --first-parent main..${git_current_branch}`
-  echo "Fount $commit_count commits in branch."
+  echo "Found $commit_count commits in branch."
 
   if [[ "$commit_count" -eq "0" ]];
   then
